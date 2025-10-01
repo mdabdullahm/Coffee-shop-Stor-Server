@@ -17,7 +17,6 @@ function App() {
           Available Coffees: {coffees.length}
         </h2>
         
-        {/* কফি কার্ডের গ্রিড */}
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
           {
             coffees.map(coffee => 

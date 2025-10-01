@@ -2,7 +2,6 @@ import { useLoaderData } from "react-router-dom";
 import Swal from 'sweetalert2';
 
 const UpdateCoffee = () => {
-    // রাউটারের loader থেকে কফির আগের ডেটা লোড করা হচ্ছে
     const coffee = useLoaderData();
     const { _id, name, quantity, supplier, taste, category, details, photo } = coffee;
 
@@ -22,7 +21,6 @@ const UpdateCoffee = () => {
         const updatedCoffee = { name, quantity, supplier, taste, category, details, photo };
         console.log(updatedCoffee);
 
-        // সার্ভারে PUT রিকোয়েস্ট পাঠানো হচ্ছে
         fetch(`http://localhost:2000/coffee/${_id}`, {
             method: 'PUT',
             headers: {

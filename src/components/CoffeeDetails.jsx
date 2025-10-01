@@ -2,7 +2,6 @@ import { useLoaderData, Link } from "react-router-dom";
 import { FaArrowLeft } from 'react-icons/fa';
 
 const CoffeeDetails = () => {
-    // loader থেকে কফির ডেটা লোড করা হচ্ছে
     const coffee = useLoaderData();
     const { name, quantity, supplier, taste, category, details, photo } = coffee;
 
