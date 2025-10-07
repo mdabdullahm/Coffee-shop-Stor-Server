@@ -1,5 +1,4 @@
-// import { createRequire } from 'node:module';
-// const require = createRequire(import.meta.url);
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -12,4 +11,7 @@ export default {
   plugins: [
     require("daisyui"),
   ],
+  daisyui: {
+    themes: ["light", "dark"],
+  },
 }
